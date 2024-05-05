@@ -17,4 +17,5 @@ class MusicPlayList(models.Model):
 
     class Meta:
         unique_together = [["playlist", "music"],["playlist", "order"]]
+        ordering = ['order']
 
